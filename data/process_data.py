@@ -90,7 +90,7 @@ def save_data(df, database_filepath):
     -------
     None
     """
-    engine = create_engine('sqlite:///{}'.format(database_filename))
+    engine = create_engine('sqlite:///{}'.format(database_filepath))
     df.to_sql('pipeline', engine, index=False)
 
 def main():
