@@ -39,19 +39,19 @@
             using the classifier. </li>
             <li>templates/
                 <ol>
-                    <li><b>master.html: the template for visualizations and searching new messages.</b></li>
-                    <li><b>go.html: the template for tagging the related categories for new messages.</b></li>
+                    <li><b>master.html:</b> the template for visualizations and searching new messages.</li>
+                    <li><b>go.html:</b> the template for tagging the related categories for new messages.</li>
                 </ol>
             </li>
         </ol>
     </li>
     <li>data/
         <ol>
-            <li><b>disaster_categories.csv:</b> This file contains the categories and unique identifier for each message.</li>
-            <li><b>diaster_messages.csv:</b> This file contains the message data and the unique identifer for each message.</li>
-            <li><b>DisasterResponse.db:</b> This database file contains the message and category data combined into a sqlite database</li>
-            <li><b>process_data.py:</b> This file contains the functions for preprocessing the message and category data, and loading
-            the combined data into a database.</li>
+         <li><b>disaster_categories.csv:</b> This file contains the categories and unique identifier for each message.</li>
+         <li><b>diaster_messages.csv:</b> This file contains the message data and the unique identifer for each message.</li>
+         <li><b>DisasterResponse.db:</b> This database file contains the message and category data combined into a sqlite database</li>
+         <li><b>process_data.py:</b> This file contains the functions for preprocessing the message and category data, and loading
+         the combined data into a database.</li>
         </ol>
     </li>
     <li>models/
