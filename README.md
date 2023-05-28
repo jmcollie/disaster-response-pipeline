@@ -71,3 +71,6 @@
 One of the challenges with this dataset pertains to the class imbalance in many of the outputs in the dataset. For example, there are 25934 cases in the dependent variable 'fire' where 'fire == 0', yet only 282 instances where 'fire == 1' - this level of class imbalance has tendency to eliminate the effect of the minority class. Additionally, when optimizing for average weighted accuracy with severe class imbalance, the model can predict the majority class all or most of the time, and obtain a high level of accuracy. In the case of a disaster response pipeline, you could run into a scenario where you never predict when a disaster has occurred, but be highly accurate. 
 
 One of the ways to resolve class imbalance, is to resample the training dataset, e.g., by upsampling the minority class or downsampling the majority class, however, resampling is complicated if not infeasible in a multi-class, multi-output problem. Another option is to change the approach of optimizing for weighted average accuracy or a weighted metric altogether, and instead considering an unweighted metric, such as unweighted average recall which will place more importance on the underrepresented class versus the weighted metric.
+
+
+## Link to Repository: https://github.com/jmcollie/disaster_response_pipeline
