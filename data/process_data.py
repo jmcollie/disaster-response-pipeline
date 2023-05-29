@@ -69,6 +69,9 @@ def clean_data(df):
     
     # Dropping duplicated rows.
     df.drop(index=df[df.duplicated()].index, inplace=True)
+    
+    # Dropping rows where category related equals 2.
+    df.drop(index=df[df['related'] == 2].index, inplace=True)
         
     return df
 
@@ -115,7 +118,7 @@ def main():
         print('Loading data...\n    MESSAGES: {}\n    CATEGORIES: {}'
               .format(messages_filepath, categories_filepath))
         df = load_data(messages_filepath, categories_filepath)
-
+        
         print('Cleaning data...')
         df = clean_data(df)
         
@@ -123,6 +126,7 @@ def main():
         save_data(df, database_filepath)
         
         print('Cleaned data saved to database!')
+        
     
     else:
         print('Please provide the filepaths of the messages and categories '\
